@@ -29,7 +29,7 @@ class StorageDataTableViewController: UITableViewController {
         ]
  
     ]
-    let userImage = ["User1", "User2"]
+//    let userImage = ["User1", "User2"]
     
 //    var selectedCell: String?
     
