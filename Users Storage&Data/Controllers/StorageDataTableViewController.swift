@@ -31,7 +31,7 @@ class StorageDataTableViewController: UITableViewController {
     ]
 //    let userImage = ["User1", "User2"]
     
-//    var selectedCell: String?
+    var selectedCell: String?
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -39,10 +39,44 @@ class StorageDataTableViewController: UITableViewController {
         
     }
     
+    override func viewWillAppear(_ animated: Bool) {
+        title = selectedCell
+        super.viewWillAppear(animated)
+
+
+    }
+    override func viewWillDisappear(_ animated: Bool) {
+        super.viewWillDisappear(animated)
+
+//        navigationController?.setNavigationBarHidden(false, animated: animated)
+        navigationItem.backBarButtonItem = UIBarButtonItem(title: "", style: .plain, target: nil, action: nil)
+    }
+    
+    override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        return 60
+    }
     
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         performSegue(withIdentifier: Constants.ProfileSegue, sender: self)
+        
+        
+        
     }
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        let destination = segue.destination as! ProfileTableViewController
+        if let indexPath = tableView.indexPathForSelectedRow {
+            destination.selectedUser = data[indexPath.section][indexPath.row]
+        }
+    }
+    
+//    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+////        let destination = segue.destination as! ProfileTableViewController
+////        if let indexPath = tableView.indexPathForSelectedRow {
+//////            destination.selectedUser = data[indexPath.section][indexPath.row]
+////        }
+//        
+//        
+//    }
 
     // MARK: - Table view data source
 

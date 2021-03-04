@@ -54,12 +54,12 @@ extension ViewController: UITableViewDelegate {
       
     }
     
-//    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-//        let destination = segue.destination as! StorageDataTableViewController
-//        if let indexPath = tableView.indexPathForSelectedRow {
-//            destination.selectedCell = data[indexPath.section][indexPath.row]
-//        }
-//    }
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        let destination = segue.destination as! StorageDataTableViewController
+        if let indexPath = tableView.indexPathForSelectedRow {
+            destination.selectedCell = data[indexPath.section][indexPath.row]
+        }
+    }
 }
 
 extension ViewController: UITableViewDataSource {

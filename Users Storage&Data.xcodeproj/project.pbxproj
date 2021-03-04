@@ -11,6 +11,7 @@
 		4332C67625EF76DE0029743D /* StorageDataTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4332C67525EF76DE0029743D /* StorageDataTableViewController.swift */; };
 		4332C68925EF8FE90029743D /* ImageCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4332C68725EF8FE90029743D /* ImageCollectionViewCell.swift */; };
 		4332C68A25EF8FE90029743D /* ImageCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4332C68825EF8FE90029743D /* ImageCollectionViewCell.xib */; };
+		4336327D25F0CC9400708FF1 /* ProfileTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4336327C25F0CC9400708FF1 /* ProfileTableViewController.swift */; };
 		43566F2325EF378D0014F654 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43566F2225EF378D0014F654 /* AppDelegate.swift */; };
 		43566F2525EF378D0014F654 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43566F2425EF378D0014F654 /* SceneDelegate.swift */; };
 		43566F2725EF378D0014F654 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43566F2625EF378D0014F654 /* ViewController.swift */; };
@@ -25,6 +26,7 @@
 		4332C67525EF76DE0029743D /* StorageDataTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StorageDataTableViewController.swift; sourceTree = "<group>"; };
 		4332C68725EF8FE90029743D /* ImageCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageCollectionViewCell.swift; sourceTree = "<group>"; };
 		4332C68825EF8FE90029743D /* ImageCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ImageCollectionViewCell.xib; sourceTree = "<group>"; };
+		4336327C25F0CC9400708FF1 /* ProfileTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileTableViewController.swift; sourceTree = "<group>"; };
 		43566F1F25EF378D0014F654 /* Users Storage&Data.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Users Storage&Data.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		43566F2225EF378D0014F654 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		43566F2425EF378D0014F654 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -82,6 +84,7 @@
 			children = (
 				43566F2625EF378D0014F654 /* ViewController.swift */,
 				4332C67525EF76DE0029743D /* StorageDataTableViewController.swift */,
+				4336327C25F0CC9400708FF1 /* ProfileTableViewController.swift */,
 				43B005FB25F096E30027C607 /* DataTableViewCell.swift */,
 			);
 			path = Controllers;
@@ -183,6 +186,7 @@
 				43566F2725EF378D0014F654 /* ViewController.swift in Sources */,
 				43566F2325EF378D0014F654 /* AppDelegate.swift in Sources */,
 				43B005FC25F096E30027C607 /* DataTableViewCell.swift in Sources */,
+				4336327D25F0CC9400708FF1 /* ProfileTableViewController.swift in Sources */,
 				43566F2525EF378D0014F654 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
