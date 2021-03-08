@@ -193,18 +193,18 @@
                             <rect key="frame" x="0.0" y="117" width="414" height="241"/>
                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                            <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="5" minimumInteritemSpacing="5" id="egM-Nm-ETt">
-                                <size key="itemSize" width="135" height="135"/>
+                            <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="5" minimumInteritemSpacing="5" id="IFP-zB-KWh">
+                                <size key="itemSize" width="128" height="128"/>
                                 <size key="headerReferenceSize" width="0.0" height="0.0"/>
                                 <size key="footerReferenceSize" width="0.0" height="0.0"/>
                                 <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                             </collectionViewFlowLayout>
                             <cells>
                                 <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="null" id="4pB-hg-4o4" customClass="ImageCollectionViewCell" customModule="Users_Storage_Data" customModuleProvider="target">
-                                    <rect key="frame" x="0.0" y="0.0" width="135" height="135"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="128" height="128"/>
                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                     <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="1sv-dS-bs7">
-                                        <rect key="frame" x="0.0" y="0.0" width="135" height="135"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="128" height="128"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                     </collectionViewCellContentView>
                                 </collectionViewCell>
@@ -262,8 +262,8 @@
                         </connections>
                     </tableView>
                     <navigationItem key="navigationItem" id="yda-Tf-y9f">
-                        <barButtonItem key="rightBarButtonItem" id="2wd-BA-RTg">
-                            <imageReference key="image" image="plus.rectangle.on.rectangle" catalog="system" symbolScale="medium" renderingMode="template"/>
+                        <barButtonItem key="rightBarButtonItem" title="tick" id="2wd-BA-RTg">
+                            <imageReference key="image" image="tickButton" symbolScale="medium" renderingMode="template"/>
                             <color key="tintColor" red="0.98039215690000003" green="0.68627450980000004" blue="0.14901960780000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         </barButtonItem>
                     </navigationItem>
@@ -300,7 +300,7 @@
     </scenes>
     <resources>
         <image name="User1" width="43" height="43"/>
-        <image name="plus.rectangle.on.rectangle" catalog="system" width="128" height="96"/>
+        <image name="tickButton" width="16" height="16"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
