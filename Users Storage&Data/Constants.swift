@@ -14,4 +14,8 @@ struct Constants {
     static let ProfileSegue = "GoToProfileUser"
     
     static let TableCell = "TableCell"
+    static let TableCellWifi = "TableCellWifi"
+    static let TableCellTotal = "TableCellTotal"
+    static let TableCellUser = "TableCellUser"
+    
 }

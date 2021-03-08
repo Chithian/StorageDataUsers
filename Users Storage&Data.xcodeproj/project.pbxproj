@@ -18,7 +18,6 @@
 		43566F2A25EF378D0014F654 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 43566F2825EF378D0014F654 /* Main.storyboard */; };
 		43566F2C25EF37900014F654 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 43566F2B25EF37900014F654 /* Assets.xcassets */; };
 		43566F2F25EF37900014F654 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 43566F2D25EF37900014F654 /* LaunchScreen.storyboard */; };
-		43B005FC25F096E30027C607 /* DataTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43B005FB25F096E30027C607 /* DataTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -35,7 +34,6 @@
 		43566F2B25EF37900014F654 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		43566F2E25EF37900014F654 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		43566F3025EF37900014F654 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		43B005FB25F096E30027C607 /* DataTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -85,7 +83,6 @@
 				43566F2625EF378D0014F654 /* ViewController.swift */,
 				4332C67525EF76DE0029743D /* StorageDataTableViewController.swift */,
 				4336327C25F0CC9400708FF1 /* ProfileTableViewController.swift */,
-				43B005FB25F096E30027C607 /* DataTableViewCell.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -185,7 +182,6 @@
 				4332C67025EF3FC00029743D /* Constants.swift in Sources */,
 				43566F2725EF378D0014F654 /* ViewController.swift in Sources */,
 				43566F2325EF378D0014F654 /* AppDelegate.swift in Sources */,
-				43B005FC25F096E30027C607 /* DataTableViewCell.swift in Sources */,
 				4336327D25F0CC9400708FF1 /* ProfileTableViewController.swift in Sources */,
 				43566F2525EF378D0014F654 /* SceneDelegate.swift in Sources */,
 			);
@@ -341,6 +337,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				MARKETING_VERSION = 1.1;
 				PRODUCT_BUNDLE_IDENTIFIER = "Chithian-Hunter-.Users-Storage-Data";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
@@ -360,6 +357,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				MARKETING_VERSION = 1.1;
 				PRODUCT_BUNDLE_IDENTIFIER = "Chithian-Hunter-.Users-Storage-Data";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;

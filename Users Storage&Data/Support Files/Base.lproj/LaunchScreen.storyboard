@@ -4,6 +4,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Image references" minToolsVersion="12.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -17,18 +18,37 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Storage Data" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MG8-f7-Znj">
-                                <rect key="frame" x="109.5" y="427" width="195.5" height="42"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="35"/>
-                                <color key="textColor" red="0.98039215690000003" green="0.68627450980000004" blue="0.14901960780000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="oAv-fF-kcL">
+                                <rect key="frame" x="132" y="372" width="150" height="151"/>
+                                <color key="tintColor" red="1" green="0.57810515169999999" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="150" id="Mus-Nz-kRr"/>
+                                    <constraint firstAttribute="width" constant="150" id="nla-7d-IWe"/>
+                                </constraints>
+                                <imageReference key="image" image="photo.on.rectangle.angled" catalog="system" symbolScale="medium" renderingMode="template"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lor-gD-41g">
+                                <rect key="frame" x="10" y="523" width="394" height="36"/>
+                                <attributedString key="attributedText">
+                                    <fragment content="Storage &amp; Data">
+                                        <attributes>
+                                            <color key="NSColor" red="1" green="0.57810515169999999" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <font key="NSFont" metaFont="system" size="30"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <color key="backgroundColor" systemColor="tertiarySystemGroupedBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="MG8-f7-Znj" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" id="qeE-rH-nLN"/>
-                            <constraint firstItem="MG8-f7-Znj" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="r0e-yy-UFC"/>
+                            <constraint firstItem="oAv-fF-kcL" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" id="3s6-VB-3cu"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="lor-gD-41g" secondAttribute="trailing" constant="10" id="GJ3-OL-iEi"/>
+                            <constraint firstItem="oAv-fF-kcL" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="PaF-Hc-joI"/>
+                            <constraint firstItem="lor-gD-41g" firstAttribute="top" secondItem="oAv-fF-kcL" secondAttribute="bottom" id="XzH-FN-WSF"/>
+                            <constraint firstItem="lor-gD-41g" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="10" id="YFv-rY-Mo6"/>
                         </constraints>
                     </view>
                 </viewController>
@@ -38,8 +58,9 @@
         </scene>
     </scenes>
     <resources>
-        <systemColor name="systemBackgroundColor">
-            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        <image name="photo.on.rectangle.angled" catalog="system" width="128" height="101"/>
+        <systemColor name="tertiarySystemGroupedBackgroundColor">
+            <color red="0.94901960784313721" green="0.94901960784313721" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>

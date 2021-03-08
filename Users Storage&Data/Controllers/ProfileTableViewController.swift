@@ -7,45 +7,53 @@
 
 import UIKit
 
+
 class ProfileTableViewController: UITableViewController {
 
     
+    @IBOutlet weak var collectionView: UICollectionView!
+    
+    
     let header = ["Usage"]
     let data:[[String]] = [["Total"]]
-    
+    let image = ["image1", "image2", "image3", "image4", "image5", "image2"]
+    let storageData = [20, 10, 33, 25, 40, 35]
     var selectedUser: String?
-        
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
         self.title = "User Name"
         
-//        self.navigationItem.setHidesBackButton(true, animated: true)
-
-        // Uncomment the following line to preserve selection between presentations
-        // self.clearsSelectionOnViewWillAppear = false
-
-        // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
-        // self.navigationItem.rightBarButtonItem = self.editButtonItem
     }
    
     
     override func viewWillAppear(_ animated: Bool) {
         title = selectedUser
         super.viewWillAppear(animated)
+        
 
+        let layout = UICollectionViewFlowLayout()
+        layout.itemSize = CGSize(width: 130, height: 115)
+        collectionView.collectionViewLayout = layout
+    
+        collectionView.register(ImageCollectionViewCell.nib(), forCellWithReuseIdentifier: ImageCollectionViewCell.identifier)
+        
+        collectionView.dataSource = self
 
     }
 
-    // MARK: - Table view data source
+    
+    // MARK: - TableView DataSource
 
     override func numberOfSections(in tableView: UITableView) -> Int {
-        // #warning Incomplete implementation, return the number of sections
+     
         return header.count
     }
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        // #warning Incomplete implementation, return the number of rows
+       
         return data[section].count
     }
     
@@ -59,17 +67,42 @@ class ProfileTableViewController: UITableViewController {
 
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
-
-
-//        cells.userImage?.image = UIImage(named: self.imageData[indexPath.row])
-////
-        let cell = tableView.dequeueReusableCell(withIdentifier: Constants.TableCell, for: indexPath)
-//        cell.userImage.image = UIImage(named: imageData[indexPath.row])
+        let cell = tableView.dequeueReusableCell(withIdentifier: Constants.TableCellTotal, for: indexPath)
 
         cell.textLabel?.text = data[indexPath.section][indexPath.row]
-//        cell.imageView?.image = UIImage(named: self.userImage[indexPath.row])
+
         return cell
     }
 
 
+}
+
+//MARK: - Collection View DataSource
+
+extension ProfileTableViewController: UICollectionViewDataSource {
+    
+    
+    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+        return image.count
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: ImageCollectionViewCell.identifier, for: indexPath) as! ImageCollectionViewCell
+        
+        cell.configure(with: UIImage(named: image[indexPath.row])!)
+       
+        
+        return cell
+    }
+    
+    
+}
+
+//MARK: - CollectionView Delegate FlowLayout
+extension ProfileTableViewController: UICollectionViewDelegateFlowLayout {
+    
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
+        
+         return CGSize(width: 130, height: 115)
+    }
 }
