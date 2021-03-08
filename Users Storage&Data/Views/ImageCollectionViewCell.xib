@@ -18,13 +18,13 @@
                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                 <subviews>
                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="image1" highlightedImage="Rectangle" translatesAutoresizingMaskIntoConstraints="NO" id="5ip-YA-XCh">
-                        <rect key="frame" x="10" y="0.0" width="200" height="157"/>
+                        <rect key="frame" x="0.0" y="0.0" width="220" height="157"/>
                     </imageView>
                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Rectangle" translatesAutoresizingMaskIntoConstraints="NO" id="UYL-Of-eP5">
-                        <rect key="frame" x="10" y="0.0" width="200" height="57"/>
+                        <rect key="frame" x="0.0" y="0.0" width="220" height="57"/>
                     </imageView>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="10 MB" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XVi-WW-wS8">
-                        <rect key="frame" x="167.5" y="8" width="32.5" height="13.5"/>
+                        <rect key="frame" x="175.5" y="8" width="32.5" height="13.5"/>
                         <fontDescription key="fontDescription" type="system" pointSize="11"/>
                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <nil key="highlightedColor"/>
@@ -33,12 +33,12 @@
             </view>
             <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
             <constraints>
-                <constraint firstAttribute="trailing" secondItem="UYL-Of-eP5" secondAttribute="trailing" constant="10" id="Byf-mQ-vmX"/>
-                <constraint firstAttribute="trailing" secondItem="XVi-WW-wS8" secondAttribute="trailing" constant="20" id="Gsy-0G-XYx"/>
+                <constraint firstAttribute="trailing" secondItem="UYL-Of-eP5" secondAttribute="trailing" id="Byf-mQ-vmX"/>
+                <constraint firstAttribute="trailing" secondItem="XVi-WW-wS8" secondAttribute="trailing" constant="12" id="Gsy-0G-XYx"/>
                 <constraint firstItem="UYL-Of-eP5" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="HJ9-2a-wrk"/>
-                <constraint firstItem="5ip-YA-XCh" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="10" id="SSu-By-WSw"/>
-                <constraint firstItem="UYL-Of-eP5" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="10" id="UKn-fU-3Ws"/>
-                <constraint firstAttribute="trailing" secondItem="5ip-YA-XCh" secondAttribute="trailing" constant="10" id="ZnO-9L-hCn"/>
+                <constraint firstItem="5ip-YA-XCh" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="SSu-By-WSw"/>
+                <constraint firstItem="UYL-Of-eP5" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="UKn-fU-3Ws"/>
+                <constraint firstAttribute="trailing" secondItem="5ip-YA-XCh" secondAttribute="trailing" id="ZnO-9L-hCn"/>
                 <constraint firstAttribute="bottom" secondItem="5ip-YA-XCh" secondAttribute="bottom" id="jz1-yW-JFC"/>
                 <constraint firstItem="XVi-WW-wS8" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="8" id="x0S-Uj-qcH"/>
                 <constraint firstItem="5ip-YA-XCh" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="ync-9z-ARx"/>

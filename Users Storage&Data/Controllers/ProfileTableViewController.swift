@@ -17,7 +17,6 @@ class ProfileTableViewController: UITableViewController {
     let header = ["Usage"]
     let data:[[String]] = [["Total"]]
     let image = ["image1", "image2", "image3", "image4", "image5", "image2"]
-    let storageData = [20, 10, 33, 25, 40, 35]
     var selectedUser: String?
     
     
@@ -34,10 +33,10 @@ class ProfileTableViewController: UITableViewController {
         super.viewWillAppear(animated)
         
 
-        let layout = UICollectionViewFlowLayout()
-        layout.itemSize = CGSize(width: 130, height: 115)
-        collectionView.collectionViewLayout = layout
-    
+//        let layout = UICollectionViewFlowLayout()
+//        layout.itemSize = CGSize(width: 130, height: 115)
+//        collectionView.collectionViewLayout = layout
+//
         collectionView.register(ImageCollectionViewCell.nib(), forCellWithReuseIdentifier: ImageCollectionViewCell.identifier)
         
         collectionView.dataSource = self
@@ -99,10 +98,29 @@ extension ProfileTableViewController: UICollectionViewDataSource {
 }
 
 //MARK: - CollectionView Delegate FlowLayout
+
 extension ProfileTableViewController: UICollectionViewDelegateFlowLayout {
-    
-    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
-        
-         return CGSize(width: 130, height: 115)
-    }
+//    
+//    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
+//        
+//         return CGSize(width: 130, height: 115)
+//    }
+//}
+
+    @available(iOS 13.0, *)
+    func createBasicListLayout() -> UICollectionViewLayout {
+    let itemSize = NSCollectionLayoutSize(widthDimension: .fractionalWidth(1.0),
+                                         heightDimension: .fractionalHeight(1.0))
+    let item = NSCollectionLayoutItem(layoutSize: itemSize)
+  
+    let groupSize = NSCollectionLayoutSize(widthDimension: .fractionalWidth(1.0),
+                                          heightDimension: .absolute(44))
+    let group = NSCollectionLayoutGroup.horizontal(layoutSize: groupSize,
+                                                     subitems: [item])
+  
+    let section = NSCollectionLayoutSection(group: group)
+
+    let layout = UICollectionViewCompositionalLayout(section: section)
+    return layout
+}
 }
