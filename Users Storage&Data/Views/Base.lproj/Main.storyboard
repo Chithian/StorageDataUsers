@@ -189,24 +189,22 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                        <collectionView key="tableFooterView" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" dataMode="prototypes" prefetchingEnabled="NO" id="3tf-rS-Hfk">
-                            <rect key="frame" x="0.0" y="117" width="414" height="574"/>
-                            <autoresizingMask key="autoresizingMask"/>
+                        <collectionView key="tableFooterView" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" id="Wr5-oi-cNw">
+                            <rect key="frame" x="0.0" y="117" width="414" height="575"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                            <viewLayoutGuide key="contentLayoutGuide" id="LlF-yI-TTi"/>
-                            <viewLayoutGuide key="frameLayoutGuide" id="vlt-dA-7rN"/>
-                            <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="3" minimumInteritemSpacing="3" sectionInsetReference="safeArea" id="IFP-zB-KWh">
-                                <size key="itemSize" width="115" height="115"/>
+                            <collectionViewFlowLayout key="collectionViewLayout" automaticEstimatedItemSize="YES" minimumLineSpacing="5" minimumInteritemSpacing="3" id="EN3-fo-4zp">
+                                <size key="itemSize" width="128" height="128"/>
                                 <size key="headerReferenceSize" width="0.0" height="0.0"/>
                                 <size key="footerReferenceSize" width="0.0" height="0.0"/>
-                                <inset key="sectionInset" minX="10" minY="4" maxX="10" maxY="4"/>
+                                <inset key="sectionInset" minX="10" minY="0.0" maxX="10" maxY="0.0"/>
                             </collectionViewFlowLayout>
                             <cells>
-                                <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="itemSize" id="4pB-hg-4o4" customClass="ImageCollectionViewCell" customModule="Users_Storage_Data" customModuleProvider="target">
-                                    <rect key="frame" x="10" y="4" width="114.99999999999997" height="115"/>
+                                <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="ImageCell" id="XdT-0g-9dM">
+                                    <rect key="frame" x="10" y="0.0" width="128" height="128"/>
                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                    <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="1sv-dS-bs7">
-                                        <rect key="frame" x="0.0" y="0.0" width="114.99999999999997" height="115"/>
+                                    <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="tv8-av-Eeo">
+                                        <rect key="frame" x="0.0" y="0.0" width="128" height="128"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                     </collectionViewCellContentView>
                                 </collectionViewCell>
@@ -228,10 +226,10 @@
                                             <nil key="highlightedColor"/>
                                         </label>
                                         <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="YtL-vA-r2K">
-                                            <rect key="frame" x="336.33333333333331" y="11.999999999999998" width="57.666666666666664" height="20.333333333333332"/>
+                                            <rect key="frame" x="343.66666666666669" y="11.999999999999998" width="50.333333333333336" height="20.333333333333332"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <attributedString key="attributedText">
-                                                <fragment content="100">
+                                                <fragment content="60">
                                                     <attributes>
                                                         <color key="NSColor" red="1" green="0.57810515169999999" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                         <font key="NSFont" metaFont="system" size="17"/>
@@ -270,7 +268,7 @@
                         </barButtonItem>
                     </navigationItem>
                     <connections>
-                        <outlet property="collectionView" destination="3tf-rS-Hfk" id="PIm-yY-ml6"/>
+                        <outlet property="collectionView" destination="Wr5-oi-cNw" id="sYj-T0-vzg"/>
                     </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="mAQ-sB-cjE" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>

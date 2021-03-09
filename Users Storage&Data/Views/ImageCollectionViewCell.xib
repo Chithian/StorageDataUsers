@@ -4,58 +4,59 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
-        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="collection view cell content view" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
-        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="ImageCollectionViewCell" customModule="Users_Storage_Data" customModuleProvider="target">
-            <rect key="frame" x="0.0" y="0.0" width="200" height="157"/>
-            <autoresizingMask key="autoresizingMask"/>
-            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
-                <rect key="frame" x="0.0" y="0.0" width="200" height="157"/>
-                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="rra-r2-Y6j" customClass="ImageCollectionViewCell" customModule="Users_Storage_Data" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="116" height="122"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" ambiguous="YES" insetsLayoutMarginsFromSafeArea="NO" id="aYd-os-EeO">
+                <rect key="frame" x="0.0" y="0.0" width="116" height="122"/>
+                <autoresizingMask key="autoresizingMask"/>
                 <subviews>
-                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="image1" highlightedImage="Rectangle" translatesAutoresizingMaskIntoConstraints="NO" id="5ip-YA-XCh">
-                        <rect key="frame" x="0.0" y="0.0" width="200" height="157"/>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="redraw" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="image2" translatesAutoresizingMaskIntoConstraints="NO" id="8c9-IT-cmt">
+                        <rect key="frame" x="0.0" y="0.0" width="115" height="115"/>
                         <constraints>
-                            <constraint firstAttribute="width" constant="200" id="rlT-Xf-5Tm"/>
+                            <constraint firstAttribute="width" constant="115" id="4en-0N-iFO"/>
+                            <constraint firstAttribute="height" constant="115" id="VZu-dv-qFK"/>
                         </constraints>
                     </imageView>
-                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Rectangle" translatesAutoresizingMaskIntoConstraints="NO" id="UYL-Of-eP5">
-                        <rect key="frame" x="0.0" y="0.0" width="200" height="57"/>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Rectangle" translatesAutoresizingMaskIntoConstraints="NO" id="EKG-FN-ZPR">
+                        <rect key="frame" x="0.0" y="0.0" width="115" height="57"/>
                     </imageView>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="10 MB" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XVi-WW-wS8">
-                        <rect key="frame" x="155.5" y="8" width="32.5" height="13.5"/>
-                        <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="10 MB" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5DC-bG-utN">
+                        <rect key="frame" x="72" y="10" width="33" height="12"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="10"/>
                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <nil key="highlightedColor"/>
                     </label>
                 </subviews>
-            </view>
-            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
-            <constraints>
-                <constraint firstAttribute="trailing" secondItem="UYL-Of-eP5" secondAttribute="trailing" id="Byf-mQ-vmX"/>
-                <constraint firstAttribute="trailing" secondItem="XVi-WW-wS8" secondAttribute="trailing" constant="12" id="Gsy-0G-XYx"/>
-                <constraint firstItem="UYL-Of-eP5" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="HJ9-2a-wrk"/>
-                <constraint firstItem="5ip-YA-XCh" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="SSu-By-WSw"/>
-                <constraint firstItem="UYL-Of-eP5" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="UKn-fU-3Ws"/>
-                <constraint firstAttribute="trailing" secondItem="5ip-YA-XCh" secondAttribute="trailing" id="ZnO-9L-hCn"/>
-                <constraint firstAttribute="bottom" secondItem="5ip-YA-XCh" secondAttribute="bottom" id="jz1-yW-JFC"/>
-                <constraint firstItem="XVi-WW-wS8" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="8" id="x0S-Uj-qcH"/>
-                <constraint firstItem="5ip-YA-XCh" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="ync-9z-ARx"/>
-            </constraints>
-            <size key="customSize" width="200" height="157"/>
+                <constraints>
+                    <constraint firstItem="8c9-IT-cmt" firstAttribute="top" secondItem="aYd-os-EeO" secondAttribute="top" id="7dq-53-jns"/>
+                    <constraint firstItem="EKG-FN-ZPR" firstAttribute="leading" secondItem="8c9-IT-cmt" secondAttribute="leading" id="IJx-a7-bTz"/>
+                    <constraint firstAttribute="trailing" secondItem="8c9-IT-cmt" secondAttribute="trailing" id="JqH-LJ-d97"/>
+                    <constraint firstItem="5DC-bG-utN" firstAttribute="leading" secondItem="aYd-os-EeO" secondAttribute="leading" constant="72" id="LwM-8y-mHm"/>
+                    <constraint firstItem="5DC-bG-utN" firstAttribute="top" secondItem="aYd-os-EeO" secondAttribute="top" constant="10" id="N7R-12-8aN"/>
+                    <constraint firstItem="8c9-IT-cmt" firstAttribute="leading" secondItem="aYd-os-EeO" secondAttribute="leading" id="OsC-6r-rhz"/>
+                    <constraint firstItem="EKG-FN-ZPR" firstAttribute="top" secondItem="aYd-os-EeO" secondAttribute="top" id="azC-dt-xwc"/>
+                    <constraint firstItem="8c9-IT-cmt" firstAttribute="trailing" secondItem="EKG-FN-ZPR" secondAttribute="trailing" id="etO-c9-74d"/>
+                    <constraint firstAttribute="trailing" secondItem="5DC-bG-utN" secondAttribute="trailing" constant="10" id="moK-NR-T78"/>
+                    <constraint firstAttribute="bottom" secondItem="8c9-IT-cmt" secondAttribute="bottom" id="tK1-ci-1gy"/>
+                </constraints>
+            </collectionViewCellContentView>
+            <size key="customSize" width="116" height="122"/>
             <connections>
-                <outlet property="imageView" destination="5ip-YA-XCh" id="xsM-aD-Jf9"/>
-                <outlet property="storageLabel" destination="XVi-WW-wS8" id="HfO-Jd-CIF"/>
+                <outlet property="imageView" destination="8c9-IT-cmt" id="0Zi-cr-DbO"/>
+                <outlet property="storageLabel" destination="5DC-bG-utN" id="g6h-mF-bd6"/>
             </connections>
-            <point key="canvasLocation" x="-133.33333333333334" y="3.0133928571428572"/>
+            <point key="canvasLocation" x="153.62318840579712" y="-164.0625"/>
         </collectionViewCell>
     </objects>
     <resources>
         <image name="Rectangle" width="112" height="57"/>
-        <image name="image1" width="112" height="112.5"/>
+        <image name="image2" width="112" height="112.5"/>
     </resources>
 </document>

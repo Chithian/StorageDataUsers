@@ -35,15 +35,15 @@ class StorageDataTableViewController: UITableViewController {
         "50 MB",
         "30 MB",
         "20 MB",
-        "33 MB",
+        "30 MB",
+        "20 MB",
+        "30 MB",
         "20 MB",
         "10 MB",
         "20 MB",
-        "10 MB",
+        "30 MB",
         "20 MB",
-        "11 MB",
-        "22 MB",
-        "10 MB"
+        "50 MB"
     ]
     
     let userImage = ["User1", "User2", "User1", "User1", "User2", "User2", "User1", "User2", "User2", "User1", "User2", "User2", "User1"]

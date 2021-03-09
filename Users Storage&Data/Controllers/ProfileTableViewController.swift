@@ -36,7 +36,7 @@ class ProfileTableViewController: UITableViewController {
 //        let layout = UICollectionViewFlowLayout()
 //        layout.itemSize = CGSize(width: 115, height: 115)
 //        collectionView.collectionViewLayout = layout
-
+//
         collectionView.register(ImageCollectionViewCell.nib(), forCellWithReuseIdentifier: ImageCollectionViewCell.identifier)
         
         collectionView.dataSource = self
