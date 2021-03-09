@@ -34,9 +34,9 @@ class ProfileTableViewController: UITableViewController {
         
 
 //        let layout = UICollectionViewFlowLayout()
-//        layout.itemSize = CGSize(width: 130, height: 115)
+//        layout.itemSize = CGSize(width: 115, height: 115)
 //        collectionView.collectionViewLayout = layout
-//
+
         collectionView.register(ImageCollectionViewCell.nib(), forCellWithReuseIdentifier: ImageCollectionViewCell.identifier)
         
         collectionView.dataSource = self
@@ -94,33 +94,16 @@ extension ProfileTableViewController: UICollectionViewDataSource {
         return cell
     }
     
-    
 }
 
 //MARK: - CollectionView Delegate FlowLayout
 
-extension ProfileTableViewController: UICollectionViewDelegateFlowLayout {
+//extension ProfileTableViewController: UICollectionViewDelegateFlowLayout {
 //    
 //    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
 //        
-//         return CGSize(width: 130, height: 115)
+//         return CGSize(width: 115, height: 115)
 //    }
 //}
 
-    @available(iOS 13.0, *)
-    func createBasicListLayout() -> UICollectionViewLayout {
-    let itemSize = NSCollectionLayoutSize(widthDimension: .fractionalWidth(1.0),
-                                         heightDimension: .fractionalHeight(1.0))
-    let item = NSCollectionLayoutItem(layoutSize: itemSize)
-  
-    let groupSize = NSCollectionLayoutSize(widthDimension: .fractionalWidth(1.0),
-                                          heightDimension: .absolute(44))
-    let group = NSCollectionLayoutGroup.horizontal(layoutSize: groupSize,
-                                                     subitems: [item])
-  
-    let section = NSCollectionLayoutSection(group: group)
 
-    let layout = UICollectionViewCompositionalLayout(section: section)
-    return layout
-}
-}

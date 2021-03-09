@@ -32,20 +32,21 @@ class StorageDataTableViewController: UITableViewController {
     ]
     let detail = [
         "100 MB",
-        "2 MB",
-        "1 MB",
-        "2 MB",
-        "1 MB",
-        "2 MB",
-        "1 MB",
-        "2 MB",
-        "1 MB",
-        "2 MB",
-        "1 MB",
-        "2 MB",
-        "1 MB"
+        "50 MB",
+        "30 MB",
+        "20 MB",
+        "33 MB",
+        "20 MB",
+        "10 MB",
+        "20 MB",
+        "10 MB",
+        "20 MB",
+        "11 MB",
+        "22 MB",
+        "10 MB"
     ]
-    let userImage = ["User1", "User2", "User2", "User1", "User2", "User2", "User1", "User2", "User2", "User1", "User2", "User2", "User1"]
+    
+    let userImage = ["User1", "User2", "User1", "User1", "User2", "User2", "User1", "User2", "User2", "User1", "User2", "User2", "User1"]
     
     var selectedCell: String?
     
